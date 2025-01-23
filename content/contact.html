@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarterX - Contact</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            width: 100%;
+            max-width: 450px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        p {
+            font-size: 1rem;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        p span {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .contact-box:before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            border-radius: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-box">
+        <h1>Contact Us</h1>
+        <p><span>Email:</span> contact@barterx.com</p>
+        <p><span>Phone:</span> +1 234-567-890</p>
+        <p><span>Address:</span> 123 BarterX Lane, New York, USA</p>
+    </div>
+</body>
+</html>

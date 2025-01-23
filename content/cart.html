@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarterX - Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: linear-gradient(135deg, #f7f9fc, #e0e8f9);
+            color: #333;
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #0056b3;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .cart-item {
+            background: linear-gradient(135deg, #ffffff, #f1f8fe);
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cart-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .cart-item p {
+            margin: 5px 0;
+            font-size: 1.1rem;
+        }
+        .cart-item p span {
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .total {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: right;
+            color: #ff6f61;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Shopping Cart</h1>
+    <div class="cart-item">
+        <p>Product: <span>Apple MacBook Pro</span></p>
+        <p>Price: <span>$1200</span></p>
+    </div>
+    <div class="cart-item">
+        <p>Product: <span>Samsung Galaxy S22</span></p>
+        <p>Price: <span>$999</span></p>
+    </div>
+    <p class="total">Total: <span>$2199</span></p>
+</body>
+</html>

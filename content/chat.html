@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarterX - Chat</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            background: linear-gradient(135deg, #f7f7f7, #e0e9f3);
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .chat-window {
+            width: 100%;
+            max-width: 600px;
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e1e1e1;
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-header {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #007bff;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .message {
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 10px;
+            max-width: 80%;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .sent {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            text-align: right;
+            margin-left: auto;
+        }
+        .received {
+            background: linear-gradient(135deg, #e0e9f3, #c5d8e7);
+            color: black;
+            text-align: left;
+            margin-right: auto;
+        }
+        .message:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .input-container {
+            display: flex;
+            margin-top: 15px;
+        }
+        .message-input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            margin-right: 10px;
+        }
+        .send-button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .send-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-window">
+        <div class="chat-header">BarterX Support Chat</div>
+        <div class="message sent">Hello, how can I help you?</div>
+        <div class="message received">I need assistance with my order.</div>
+        <div class="input-container">
+            <input type="text" class="message-input" placeholder="Type your message..." />
+            <button class="send-button">Send</button>
+        </div>
+    </div>
+</body>
+</html>
